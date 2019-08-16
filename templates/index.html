@@ -1,0 +1,88 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tron-game</title>
+</head>
+<body>
+    <h1>用户输入：</h1>
+    <form action='' method="post">
+        {% csrf_token %}
+        用户名：<input type="text" name="username" /><br />
+        密码：<input type="password" name="password" /><br />
+        <input type="submit" value="提交" />
+    </form>
+    <h1>用户展示：</h1>
+        <table border="1">
+            <thead>
+                <tr>用户名</tr>
+                <tr>密码</tr>
+            </thead>
+            <tbody>
+                {% for item in data %}
+                <tr>
+                    <td>{{ item.user }}</td>
+                    <td>{{ item.pwd }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+</body>
+</html>-->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Starter Template for Bootstrap</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+
+
+  <style>
+    body {
+      padding-top: 5rem;
+    }
+
+    .game-container {
+      width: 600px;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Tron Game</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto" id="score-list">
+      </ul>
+    </div>
+  </nav>
+
+  <main role="main" class="container-fluid">
+    <div class="game-container">
+      <canvas id="myCanvas" width=600 height=600  style="border:2px solid #eee;">
+      </canvas>
+    </div>
+  </main>
+  <!-- /.container -->
+
+  <script src="/static/index.js"></script>
+  <script src="/static/jquery-1.10.2.min.js"></script>
+</body>
+
+</html>

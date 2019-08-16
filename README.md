@@ -11,4 +11,8 @@ Original version: TRON.ipynb
 
 Reference:
 [1] https://web.stanford.edu/~jbboin/doc/ai_lightcycle.pdf
+  
 [2] javascript version of tron game comes from: https://github.com/tmattio/tron-js
+  
+
+![image](http://github.com/937332325/TRON_AI_WEB/raw/master/example.jpg)
